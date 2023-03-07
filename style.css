@@ -1,0 +1,29 @@
+h2{
+    color : red
+}
+
+.heading{
+    color:antiquewhite
+}
+
+.tittle{
+    color:brown
+}
+.tile{
+    display:inline-block
+    /* border-width: 2px;
+    border-color: black;
+    border-style: solid; */
+    /* border:2px solid black */
+}
+.img{
+    width:200px;
+    height:250px;
+}
+.tittle,.description{
+    display: block;
+}
+
+/* .imgbck{
+    width : 300px;
+} */
