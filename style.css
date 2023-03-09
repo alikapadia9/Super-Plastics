@@ -3,27 +3,45 @@ h2{
 }
 
 .heading{
-    color:antiquewhite
+    color:royalblue;
+    text-align: center;
+    text-decoration: solid;
 }
 
 .tittle{
-    color:brown
+    color:red;
+    text-align: center;
+    text-decoration: solid;
+    font-size: 25px;
 }
 .tile{
-    display:inline-block
+    display:inline-block;
     /* border-width: 2px;
     border-color: black;
     border-style: solid; */
-    /* border:2px solid black */
+    border:2px solid black ;
+    margin-left: 50px;
+    margin-bottom: 70px;
+}
+.img-wrapper{
+    width:400px;
+    height:450px;
+    border:2px solid black ;
 }
 .img{
-    width:200px;
-    height:250px;
+    width: 100%;
+    height: 100%;
 }
 .tittle,.description{
     display: block;
+    border:2px solid black ;
+
 }
 
 /* .imgbck{
     width : 300px;
 } */
+.test{
+    background-color: red;
+    height: 4rem;
+}

@@ -1,51 +1,7 @@
-// console.log('bc')
+// console.log('bde')
 // let heading = document.querySelector('h2')
 // console.log(heading.textContent)
 // heading.textContent = 'plastics';
-
-const products = [
-    {
-        title: "Coffee Table",
-        description: "4 person Capacity",
-        path: "https://cdn.shopify.com/s/files/1/0044/1208/0217/products/CENTBL1CANWBN_02_2000x.jpg?v=1664687409https://cdn.shopify.com/s/files/1/0044/1208/0217/products/CENTBL1CANWBN_02_2000x.jpg?v=1664687409"
-    },
-    {
-        title: "Coffee Table",
-        description: "4 person Capacity",
-        path: "https://cdn.shopify.com/s/files/1/0044/1208/0217/products/CENTBL1CANWBN_02_2000x.jpg?v=1664687409https://cdn.shopify.com/s/files/1/0044/1208/0217/products/CENTBL1CANWBN_02_2000x.jpg?v=1664687409"
-    },
-    {
-        title: "Chair",
-        description: "Unbreakable",
-        path: "https://m.media-amazon.com/images/I/61iBlyJ-1uL._SX522_.jpg"
-    },
-    {
-        title: "Coffee Table",
-        description: "4 person Capacity",
-        path: "https://cdn.shopify.com/s/files/1/0044/1208/0217/products/CENTBL1CANWBN_02_2000x.jpg?v=1664687409https://cdn.shopify.com/s/files/1/0044/1208/0217/products/CENTBL1CANWBN_02_2000x.jpg?v=1664687409"
-    },
-    {
-        title: "Coffee Table",
-        description: "4 person Capacity",
-        path: "https://cdn.shopify.com/s/files/1/0044/1208/0217/products/CENTBL1CANWBN_02_2000x.jpg?v=1664687409https://cdn.shopify.com/s/files/1/0044/1208/0217/products/CENTBL1CANWBN_02_2000x.jpg?v=1664687409"
-    },
-    {
-        title: "Coffee Table",
-        description: "4 person Capacity",
-        path: "https://cdn.shopify.com/s/files/1/0044/1208/0217/products/CENTBL1CANWBN_02_2000x.jpg?v=1664687409https://cdn.shopify.com/s/files/1/0044/1208/0217/products/CENTBL1CANWBN_02_2000x.jpg?v=1664687409"
-    },
-    {
-        title: "Coffee Table",
-        description: "4 person Capacity",
-        path: "https://cdn.shopify.com/s/files/1/0044/1208/0217/products/CENTBL1CANWBN_02_2000x.jpg?v=1664687409https://cdn.shopify.com/s/files/1/0044/1208/0217/products/CENTBL1CANWBN_02_2000x.jpg?v=1664687409"
-    },
-    {
-        title: "Coffee Table",
-        description: "4 person Capacity",
-        path: "https://cdn.shopify.com/s/files/1/0044/1208/0217/products/CENTBL1CANWBN_02_2000x.jpg?v=1664687409https://cdn.shopify.com/s/files/1/0044/1208/0217/products/CENTBL1CANWBN_02_2000x.jpg?v=1664687409"
-    }
-
-]
 
 let gallery = document.querySelector('#gallery')
 
@@ -55,15 +11,18 @@ products.forEach(product => {
     let title = document.createElement('span')
     let description = document.createElement('span')
     let img = document.createElement('img')
+    let imgwrp = document.createElement('div')
+    imgwrp.className= 'img-wrapper'
     title.textContent = product.title;
     title.className = 'tittle'
     description.textContent = product.description
     description.className = 'description'
 
-    img.src = product.path
+    img.src = product.path;
     img.className = 'img'
     tile.appendChild(title)
-    tile.appendChild(img)
+    imgwrp.appendChild(img)
+    tile.appendChild(imgwrp)
     tile.appendChild(description)
     gallery.appendChild(tile)
 })
