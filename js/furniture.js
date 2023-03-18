@@ -3,28 +3,31 @@
 // console.log(heading.textContent)
 // heading.textContent = 'plastics';
 
-let gallery = document.querySelector('#gallery')
+import furnitures from "../data/furnitures.json" assert {type : "json"}
 
-products.forEach(product => {
+
+let gallery = document.querySelector('#furniture-grid')
+
+furnitures.forEach(furniture => {
+    let col = document.createElement('div')
+    col.className= 'col'
     let tile = document.createElement('div')
-    tile.className= 'tile'
-    let title = document.createElement('span')
-    let description = document.createElement('span')
+    tile.className= 'card'
+    // tile.style.width = '18rem'
+    let title = document.createElement('h3')
     let img = document.createElement('img')
-    let imgwrp = document.createElement('div')
-    imgwrp.className= 'img-wrapper'
-    title.textContent = product.title;
-    title.className = 'tittle'
-    description.textContent = product.description
-    description.className = 'description'
+   
+    title.textContent = furniture.title;
+    title.classList.add(['card-title' ,'text-center', 'text-dark'])
+   
 
-    img.src = product.path;
-    img.className = 'img'
+    img.src = furniture.path;
+    img.classList.add(['card-img-top', 'furniture-image', 'rounded','mx-auto' ,'d-block'])
     tile.appendChild(title)
-    imgwrp.appendChild(img)
-    tile.appendChild(imgwrp)
-    tile.appendChild(description)
-    gallery.appendChild(tile)
+    tile.appendChild(img)
+    col.appendChild(tile)
+
+    gallery.appendChild(col)
 })
 
 
