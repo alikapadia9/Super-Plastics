@@ -1,8 +1,5 @@
  [
-    // {
-    //     "title": "Bathroom Stool",
-    //     "path": "https://m.media-amazon.com/images/I/71-L8J8YONL._SX522_.jpg"
-    // },
+    
     {
         "title": "Laundry Basket",
         "path": "https://m.media-amazon.com/images/I/71ZQxLgThvL._SY741_.jpg"
@@ -54,10 +51,6 @@
     {
         "title": "Plastic Basket",
         "path": "https://www.bigbasket.com/media/uploads/p/xxl/40081168_3-nakoda-royal-plastic-basket-big.jpg"
-    },
-    {
-        "title": "Storage Basket",
-        "path": "image.png"
     },
     {
         "title": "Small Basket",

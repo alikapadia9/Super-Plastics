@@ -53,3 +53,13 @@ h2{
         height: 350px;
         width: 200px;
 }
+/* .manucolor{
+    background-color: dimgrey;
+} */
+
+.brand{
+    text-decoration: solid;
+    text-align: center;
+    font-size: 125px;
+
+}
